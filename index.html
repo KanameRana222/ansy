@@ -282,20 +282,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 260px;
+  min-height: 360px;
   padding: 10px 0;
+  --l2d-width: clamp(168px, 19.5vw, 260px);
+  --l2d-height: calc(var(--l2d-width) * 1.444);
+  --l2d-side-gap: clamp(24px, 6vw, 180px);
 }
 
 /* ---- 左侧：Live2D 角色容器（绝对定位） ---- */
 .hero-live2d {
   position: absolute;
-  left: 300px;
+  left: var(--l2d-side-gap);
   top: 50%;
   transform: translateY(-50%);
-  width: 180px;
-  height: 260px;
-  min-width: 180px;
-  min-height: 260px;
+  width: var(--l2d-width);
+  height: var(--l2d-height);
+  min-width: var(--l2d-width);
+  min-height: var(--l2d-height);
   background: transparent;
   border-radius: 16px;
   overflow: visible;
@@ -305,7 +308,7 @@
 /* ---- 右侧：素世 Live2D 角色（绝对定位） ---- */
 .hero-live2d-right {
   left: auto;
-  right: 300px;
+  right: var(--l2d-side-gap);
 }
 .hero-live2d canvas {
   width: 100% !important;
@@ -337,7 +340,10 @@
 /* ---- 中间：标题 + 信息（居中） ---- */
 .hero-center {
   text-align: center;
+  /* 窗口调整时为左右 Live2D 留出空间，避免角色和中间文案互相压住。 */
+  max-width: min(420px, calc(100% - (var(--l2d-width) + var(--l2d-side-gap)) * 2 - 24px));
   padding: 0 20px;
+  z-index: 1;
 }
 .hero-title {
   font-size: 26px;
@@ -347,6 +353,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   letter-spacing: 2px;
+  white-space: nowrap;
 }
 .hero-subtitle {
   font-size: 13px;
@@ -358,6 +365,9 @@
   font-size: 14px;
   color: var(--text);
   line-height: 1.9;
+}
+.hero-desc-line {
+  display: inline;
 }
 .hero-desc .highlight-text {
   font-style: normal;
@@ -460,56 +470,110 @@
 @media (max-width: 640px) {
   .hero {
     flex-direction: column;
-    min-height: 200px;
+    min-height: 305px;
+    margin-bottom: 8px;
     padding-top: 0;
     position: relative;
   }
   .hero-live2d {
     position: absolute;
-    top: 50%;
+    top: 47%;
     transform: translateY(-50%);
-    width: 75px;
-    height: 112px;
+    width: 144px;
+    height: 216px;
+    min-width: 144px;
+    min-height: 216px;
     margin: 0;
   }
   .hero-live2d#l2d-container-anon {
-    left: 4px;
+    left: -20px;
   }
   .hero-live2d-right#l2d-container-soyo {
     left: auto;
-    right: 4px;
+    right: -20px;
   }
   .hero-center {
-    padding: 0 16px;
+    max-width: calc(100% - 172px);
+    padding: 0 8px;
   }
   .hero-title {
-    font-size: 20px;
+    font-size: clamp(17px, 5.2vw, 22px);
+  }
+  .hero-subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    letter-spacing: 3px;
+    line-height: 1.15;
+    margin: 4px 0 6px;
+  }
+  .hero-subtitle::before,
+  .hero-subtitle::after {
+    display: block;
+  }
+  .hero-subtitle {
+    font-size: 0;
+  }
+  .hero-subtitle::before {
+    content: 'ANON';
+    font-size: 12px;
+  }
+  .hero-subtitle::after {
+    content: '×\A SOYO';
+    white-space: pre;
+    font-size: 12px;
   }
   .hero-desc {
     font-size: 12px;
+    line-height: 1.7;
+  }
+  .hero-desc-break {
+    display: none;
+  }
+  .hero-desc-line {
+    display: block;
+    white-space: nowrap;
   }
   .hero-names {
+    flex-direction: column;
     justify-content: center;
+    gap: 4px;
+    margin: 4px 0 6px;
+  }
+  .name-tag {
+    font-size: 11px;
+    padding: 2px 12px;
+  }
+  .name-x {
+    line-height: 1;
   }
 }
 
 @media (max-width: 400px) {
+  .hero {
+    min-height: 312px;
+  }
   .hero-live2d {
-    width: 60px;
-    height: 90px;
+    top: 47%;
+    width: 150px;
+    height: 225px;
+    min-width: 150px;
+    min-height: 225px;
   }
   .hero-live2d#l2d-container-anon {
-    left: 2px;
+    left: -28px;
   }
   .hero-live2d-right#l2d-container-soyo {
-    right: 2px;
+    right: -28px;
   }
   .hero-center {
-    padding: 0 10px;
+    max-width: calc(100% - 178px);
+    padding: 0 6px;
     text-align: center;
   }
   .hero-title {
-    font-size: 17px;
+    font-size: clamp(16px, 5vw, 18px);
   }
   .hero-desc {
     font-size: 11px;
@@ -524,14 +588,15 @@
     .module-grid {
       display: grid;
       gap: 16px;
-      padding: 16px 0;
+      /* 收紧首页卡片上方留白，让四个入口更靠近 Hero。 */
+      padding: 8px 0 16px;
       grid-template-columns: repeat(2, 1fr);
     }
     @media (min-width: 600px) {
       .module-grid { gap: 20px; }
     }
     @media (min-width: 1024px) {
-      .module-grid { gap: 24px; padding: 24px 0; }
+      .module-grid { gap: 24px; padding: 12px 0 24px; }
     }
     .module-card {
       background: var(--card-bg);
@@ -610,7 +675,7 @@
     /* ===== 分隔线 ===== */
     .divider {
       text-align: center;
-      padding: 16px 0 6px;
+      padding: 6px 0 2px;
       color: var(--accent);
       font-size: 14px;
       letter-spacing: 8px;
@@ -652,7 +717,9 @@
       letter-spacing: 10px;
       opacity: 0.6;
       text-align: center;
-      padding-bottom: 10px;
+      /* 把底下的字藏一下 */
+      line-height: 1.8;
+      padding-bottom: 20px;
     }
     @media (max-width: 600px) {
       #avatar { width: 32px; height: 32px; }
@@ -1178,8 +1245,8 @@
       <span class="name-tag soyo">长崎素世</span>
     </div>
     <p class="hero-desc">
-      无论你<span class="highlight-text">真实</span>的一面还是<span class="highlight-text">虚伪</span>的一面，<br>
-      我都喜欢。
+      <span class="hero-desc-line">无论你<span class="highlight-text">真实</span>的一面</span><span class="hero-desc-line">还是<span class="highlight-text">虚伪</span>的一面，</span><br class="hero-desc-break">
+      <span class="hero-desc-line">我都喜欢。</span>
     </p>
   </div>
 </div>
