@@ -1,0 +1,1453 @@
+{
+    "Version":  3,
+    "Meta":  {
+                 "Duration":  1.367,
+                 "Fps":  30,
+                 "Loop":  false,
+                 "AreBeziersRestricted":  true,
+                 "CurveCount":  96,
+                 "TotalSegmentCount":  223,
+                 "TotalPointCount":  319,
+                 "UserDataCount":  0,
+                 "TotalUserDataSize":  0
+             },
+    "Curves":  [
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamAngleX",
+                       "Segments":  [
+                                        0,
+                                        1,
+                                        0,
+                                        0.133,
+                                        6,
+                                        0,
+                                        0.267,
+                                        4.446,
+                                        0,
+                                        0.467,
+                                        1.585,
+                                        0,
+                                        0.833,
+                                        -0.087,
+                                        0,
+                                        1.233,
+                                        0.502,
+                                        0,
+                                        1.367,
+                                        0.502
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamAngleY",
+                       "Segments":  [
+                                        0,
+                                        -5,
+                                        0,
+                                        0.133,
+                                        -20.855,
+                                        0,
+                                        0.267,
+                                        -30,
+                                        0,
+                                        0.467,
+                                        -17.929,
+                                        0,
+                                        0.833,
+                                        -19.481,
+                                        0,
+                                        1.233,
+                                        -19.481,
+                                        0,
+                                        1.367,
+                                        -19.481
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamAngleZ",
+                       "Segments":  [
+                                        0,
+                                        -8,
+                                        0,
+                                        0.133,
+                                        8,
+                                        0,
+                                        0.333,
+                                        4.6,
+                                        0,
+                                        0.467,
+                                        1.585,
+                                        0,
+                                        0.833,
+                                        -0.116,
+                                        0,
+                                        1.233,
+                                        0.502,
+                                        0,
+                                        1.367,
+                                        0.502
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamEyeLOpen",
+                       "Segments":  [
+                                        0,
+                                        1,
+                                        0,
+                                        0.2,
+                                        5.551115E-16,
+                                        0,
+                                        0.333,
+                                        0,
+                                        0,
+                                        0.5,
+                                        1,
+                                        0,
+                                        0.767,
+                                        1,
+                                        0,
+                                        1.367,
+                                        1
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamEyeROpen",
+                       "Segments":  [
+                                        0,
+                                        1,
+                                        0,
+                                        0.2,
+                                        5.551115E-16,
+                                        0,
+                                        0.333,
+                                        0,
+                                        0,
+                                        0.5,
+                                        1,
+                                        0,
+                                        0.767,
+                                        1,
+                                        0,
+                                        1.367,
+                                        1
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamEyeBallY",
+                       "Segments":  [
+                                        0,
+                                        -0.2,
+                                        0,
+                                        0.233,
+                                        -0.3,
+                                        0,
+                                        0.567,
+                                        0.4,
+                                        0,
+                                        1.367,
+                                        0.4
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamEyeLScsle2",
+                       "Segments":  [
+                                        0,
+                                        1,
+                                        0,
+                                        0.333,
+                                        1,
+                                        0,
+                                        0.433,
+                                        1.2,
+                                        0,
+                                        1.367,
+                                        1.2
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamEyeRScsle2",
+                       "Segments":  [
+                                        0,
+                                        1,
+                                        0,
+                                        0.333,
+                                        1,
+                                        0,
+                                        0.433,
+                                        1.2,
+                                        0,
+                                        1.367,
+                                        1.2
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamBodyAngleY",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        0.067,
+                                        -1.996,
+                                        0,
+                                        0.267,
+                                        6.914,
+                                        0,
+                                        0.467,
+                                        -6.762,
+                                        0,
+                                        0.767,
+                                        -9.636,
+                                        0,
+                                        1.233,
+                                        -10,
+                                        0,
+                                        1.367,
+                                        -10
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamBodyAngleZ",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        0.333,
+                                        0,
+                                        0,
+                                        0.7,
+                                        -2,
+                                        0,
+                                        0.833,
+                                        -2,
+                                        0,
+                                        1.233,
+                                        -2,
+                                        0,
+                                        1.367,
+                                        -2
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamBodyAngleY2",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        0.067,
+                                        -1.145,
+                                        0,
+                                        0.133,
+                                        -3.09,
+                                        0,
+                                        0.267,
+                                        -2.693,
+                                        0,
+                                        0.367,
+                                        7.389,
+                                        0,
+                                        0.433,
+                                        10,
+                                        0,
+                                        0.7,
+                                        7.389,
+                                        0,
+                                        0.867,
+                                        8.199,
+                                        0,
+                                        1.233,
+                                        7.389,
+                                        0,
+                                        1.367,
+                                        7.389
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamShoulderR",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        0.2,
+                                        0.299,
+                                        0,
+                                        0.3,
+                                        0.299,
+                                        0,
+                                        0.467,
+                                        1,
+                                        0,
+                                        0.633,
+                                        1,
+                                        0,
+                                        0.833,
+                                        0.946,
+                                        0,
+                                        1.367,
+                                        0.946
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamShoulderL",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        0.2,
+                                        0.299,
+                                        0,
+                                        0.3,
+                                        0.299,
+                                        0,
+                                        0.467,
+                                        1,
+                                        0,
+                                        0.633,
+                                        1,
+                                        0,
+                                        0.833,
+                                        0.946,
+                                        0,
+                                        1.367,
+                                        0.946
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "paramArmL01",
+                       "Segments":  [
+                                        0,
+                                        -3,
+                                        0,
+                                        0.167,
+                                        -5,
+                                        0,
+                                        0.367,
+                                        6,
+                                        0,
+                                        0.533,
+                                        4,
+                                        0,
+                                        0.667,
+                                        4,
+                                        0,
+                                        0.867,
+                                        4,
+                                        0,
+                                        1.367,
+                                        4
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "paramArmL01_contraction",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        0.167,
+                                        -6,
+                                        0,
+                                        0.3,
+                                        -6.9,
+                                        0,
+                                        0.367,
+                                        -2.9,
+                                        0,
+                                        0.533,
+                                        -3.945,
+                                        0,
+                                        0.7,
+                                        -3.047,
+                                        0,
+                                        1.367,
+                                        -3.047
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "paramArmL02",
+                       "Segments":  [
+                                        0,
+                                        -3,
+                                        0,
+                                        0.167,
+                                        -6.021,
+                                        0,
+                                        0.3,
+                                        -16.909,
+                                        0,
+                                        0.5,
+                                        4.458,
+                                        0,
+                                        0.7,
+                                        2.521,
+                                        0,
+                                        0.833,
+                                        2.971,
+                                        0,
+                                        1.367,
+                                        2.971
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "paramArmL02_contraction",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        0.167,
+                                        -5,
+                                        0,
+                                        0.3,
+                                        -6.9,
+                                        0,
+                                        0.433,
+                                        -2.167,
+                                        0,
+                                        0.567,
+                                        -2.484,
+                                        0,
+                                        0.8,
+                                        -1.735,
+                                        0,
+                                        1.367,
+                                        -1.735
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "paramArmL05",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        0.133,
+                                        -0.526,
+                                        0,
+                                        0.3,
+                                        -1,
+                                        0,
+                                        0.367,
+                                        -0.086,
+                                        0,
+                                        0.567,
+                                        -1,
+                                        0,
+                                        0.8,
+                                        -0.5,
+                                        0,
+                                        1.367,
+                                        -0.5
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "paramArmL03",
+                       "Segments":  [
+                                        0,
+                                        13,
+                                        0,
+                                        0.233,
+                                        -1,
+                                        0,
+                                        0.333,
+                                        6.958,
+                                        0,
+                                        0.467,
+                                        30,
+                                        0,
+                                        0.667,
+                                        28,
+                                        0,
+                                        0.8,
+                                        20,
+                                        0,
+                                        1.367,
+                                        20
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "paramArmL04",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        0.133,
+                                        10,
+                                        0,
+                                        0.233,
+                                        -10,
+                                        0,
+                                        0.433,
+                                        0,
+                                        0,
+                                        0.567,
+                                        -5.312,
+                                        0,
+                                        0.833,
+                                        -4.036,
+                                        0,
+                                        1.367,
+                                        -4.036
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "paramArmR01",
+                       "Segments":  [
+                                        0,
+                                        -5,
+                                        0,
+                                        0.167,
+                                        -5,
+                                        0,
+                                        0.367,
+                                        6,
+                                        0,
+                                        0.533,
+                                        5,
+                                        0,
+                                        0.667,
+                                        4,
+                                        0,
+                                        0.867,
+                                        4,
+                                        0,
+                                        1.367,
+                                        4
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "paramArmR01_contraction",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        0.167,
+                                        -6,
+                                        0,
+                                        0.3,
+                                        -6.9,
+                                        0,
+                                        0.367,
+                                        -2.9,
+                                        0,
+                                        0.533,
+                                        -3.945,
+                                        0,
+                                        0.7,
+                                        -3.047,
+                                        0,
+                                        1.367,
+                                        -3.047
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "paramArmR02",
+                       "Segments":  [
+                                        0,
+                                        -3,
+                                        0,
+                                        0.167,
+                                        -6.021,
+                                        0,
+                                        0.3,
+                                        -16.909,
+                                        0,
+                                        0.5,
+                                        4.458,
+                                        0,
+                                        0.7,
+                                        2.521,
+                                        0,
+                                        0.833,
+                                        2.971,
+                                        0,
+                                        1.367,
+                                        2.971
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "paramArmR05",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        0.133,
+                                        -0.526,
+                                        0,
+                                        0.3,
+                                        -1,
+                                        0,
+                                        0.367,
+                                        -0.086,
+                                        0,
+                                        0.567,
+                                        -1,
+                                        0,
+                                        0.8,
+                                        -0.5,
+                                        0,
+                                        1.367,
+                                        -0.5
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "paramArmR02_contraction",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        0.167,
+                                        -5.1,
+                                        0,
+                                        0.3,
+                                        -6.9,
+                                        0,
+                                        0.433,
+                                        -2.167,
+                                        0,
+                                        0.567,
+                                        -2.484,
+                                        0,
+                                        0.8,
+                                        -1.735,
+                                        0,
+                                        1.367,
+                                        -1.735
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "paramArmR03",
+                       "Segments":  [
+                                        0,
+                                        21,
+                                        0,
+                                        0.233,
+                                        -10,
+                                        0,
+                                        0.3,
+                                        -11,
+                                        0,
+                                        0.333,
+                                        6.958,
+                                        0,
+                                        0.467,
+                                        30,
+                                        0,
+                                        0.667,
+                                        28.881,
+                                        0,
+                                        0.8,
+                                        21,
+                                        0,
+                                        1.367,
+                                        21
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "paramArmR04",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        0.167,
+                                        10,
+                                        0,
+                                        0.3,
+                                        -10,
+                                        0,
+                                        0.433,
+                                        0,
+                                        0,
+                                        0.567,
+                                        -5.312,
+                                        0,
+                                        0.833,
+                                        -4.011,
+                                        0,
+                                        1.367,
+                                        -4.011
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamAngleXPlus",
+                       "Segments":  [
+                                        0,
+                                        1,
+                                        0,
+                                        1.367,
+                                        1
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamAngleXMinus",
+                       "Segments":  [
+                                        0,
+                                        1,
+                                        0,
+                                        1.367,
+                                        1
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamEyeLSmile",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamEyeRSmile",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParameyelidR",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParameyelidL",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamEyeBallX",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamBrowLY",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamBrowLX",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamBrowLAngle",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamBrowLForm",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamBrowRY",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamBrowRX",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamBrowRAngle",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamBrowRForm",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "Param_smile_eyebrows",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "Param_angry_eyebrows",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "Param_sad_eyebrows",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "Param_fun_eyebrows",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamBrowR_eyebrows",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "Param_thinking_eyeeyebrows",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamPale",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "Paramfun",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamFaceshadow",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamSweat",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "Paramsmile01",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "Paramangry",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "Paramangry2",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "Paramsad_01",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "Paramsad",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamCheek",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamCheek2",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamEmo1",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamEmo2",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamEmo3",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamEmo4",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamEmo5",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamMouthside",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamMouthupdawn",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "Param16",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamMouthStrength",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamBreath",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamBodyPositionX",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "ParamBodyAngleX",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "paramArmL_layer3",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "paramArmL_layer",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "paramArmL_layer_3",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "paramArmL_layer2",
+                       "Segments":  [
+                                        0,
+                                        1,
+                                        0,
+                                        1.367,
+                                        1
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "paramArmL06",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "paramArmR_layer3",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "paramArmR_layer",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "paramArmR_layer2",
+                       "Segments":  [
+                                        0,
+                                        1,
+                                        0,
+                                        1.367,
+                                        1
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "paramArmR06",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "hand_R_01",
+                       "Segments":  [
+                                        0,
+                                        -1,
+                                        0,
+                                        1.367,
+                                        -1
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "hand_R_02",
+                       "Segments":  [
+                                        0,
+                                        -1,
+                                        0,
+                                        1.367,
+                                        -1
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "hand_R_03",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "hand_R_04",
+                       "Segments":  [
+                                        0,
+                                        -1,
+                                        0,
+                                        1.367,
+                                        -1
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "hand_R_05",
+                       "Segments":  [
+                                        0,
+                                        -1,
+                                        0,
+                                        1.367,
+                                        -1
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "hand_R_06",
+                       "Segments":  [
+                                        0,
+                                        -1,
+                                        0,
+                                        1.367,
+                                        -1
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "hand_R_07",
+                       "Segments":  [
+                                        0,
+                                        -1,
+                                        0,
+                                        1.367,
+                                        -1
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "hand_R_08",
+                       "Segments":  [
+                                        0,
+                                        -1,
+                                        0,
+                                        1.367,
+                                        -1
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "hand_l_01",
+                       "Segments":  [
+                                        0,
+                                        -1,
+                                        0,
+                                        1.367,
+                                        -1
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "hand_l_02",
+                       "Segments":  [
+                                        0,
+                                        -1,
+                                        0,
+                                        1.367,
+                                        -1
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "hand_l_03",
+                       "Segments":  [
+                                        0,
+                                        0,
+                                        0,
+                                        1.367,
+                                        0
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "hand_l_04",
+                       "Segments":  [
+                                        0,
+                                        -1,
+                                        0,
+                                        1.367,
+                                        -1
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "hand_l_05",
+                       "Segments":  [
+                                        0,
+                                        -1,
+                                        0,
+                                        1.367,
+                                        -1
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "hand_l_06",
+                       "Segments":  [
+                                        0,
+                                        -1,
+                                        0,
+                                        1.367,
+                                        -1
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "hand_l_07",
+                       "Segments":  [
+                                        0,
+                                        -1,
+                                        0,
+                                        1.367,
+                                        -1
+                                    ]
+                   },
+                   {
+                       "Target":  "Parameter",
+                       "Id":  "hand_l_08",
+                       "Segments":  [
+                                        0,
+                                        -1,
+                                        0,
+                                        1.367,
+                                        -1
+                                    ]
+                   }
+               ]
+}
