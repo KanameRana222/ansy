@@ -2057,7 +2057,8 @@ document.addEventListener('keydown', (e) => {
 // ============================================================
 // 2. Live2D 核心逻辑
 // ============================================================
-const MODEL_PATH_ANON = 'live2d_models/anon/model3.json';
+// 爱音贴图恢复后加版本号，避开浏览器沿用之前贴图缺失时的缓存。
+const MODEL_PATH_ANON = 'live2d_models/anon/model3.json?v=anon-textures-restored';
 const MODEL_PATH_SOYO = 'live2d_models/soyo/model3.json';
 // 爱音点击时说的话
 const THOUGHTS_ANON = [
@@ -2344,6 +2345,11 @@ async function loadLive2DAnon() {
 
     resizeL2DAnon();
 
+    // 两个 Live2D 使用独立 PIXI renderer 时，Cubism 会复用 WebGL 状态；每帧刷新爱音的上下文标记，避免后加载的模型把她清空。
+    l2dAppAnon.ticker.add(() => {
+      if (l2dModelAnon) l2dModelAnon.glContextID = -1;
+    });
+
     l2dAppAnon.view.addEventListener('mousemove', (e) => {
       const rect = l2dAppAnon.view.getBoundingClientRect();
       const x = (e.clientX - rect.left) / rect.width;
@@ -2439,6 +2445,11 @@ async function loadLive2DSoyo() {
 
     resizeL2DSoyo();
 
+    // 两个 Live2D 使用独立 PIXI renderer 时，Cubism 会复用 WebGL 状态；每帧刷新素世的上下文标记，确保两个角色都能绘制。
+    l2dAppSoyo.ticker.add(() => {
+      if (l2dModelSoyo) l2dModelSoyo.glContextID = -1;
+    });
+
     l2dAppSoyo.view.addEventListener('mousemove', (e) => {
       const rect = l2dAppSoyo.view.getBoundingClientRect();
       const x = (e.clientX - rect.left) / rect.width;
@@ -2485,10 +2496,11 @@ async function loadLive2DSoyo() {
 function initLive2D() {
   // 先加载爱音
   loadLive2DAnon();
+  loadLive2DSoyo();
   // 延迟 800ms 再加载素世
-  setTimeout(function() {
+  /*setTimeout(function() {
     loadLive2DSoyo();
-  }, 800);
+  }, 800);*/
   // 延迟启动渲染，确保两个模型都已加载完成
   setTimeout(function() {
     if (l2dAppAnon) {

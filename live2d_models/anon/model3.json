@@ -3,8 +3,8 @@
     "FileReferences":  {
                            "Moc":  "adv_live2d_anon_002_casual_spring_01.moc3",
                            "Textures":  [
-                                            "textures/texture_00.png",
-                                            "textures/texture_01.png"
+                                            "textures/texture_00.png?v=anon-textures-restored",
+                                            "textures/texture_01.png?v=anon-textures-restored"
                                         ],
                            "Expressions":  [
                                                {
