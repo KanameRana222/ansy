@@ -2097,6 +2097,7 @@ let isFadingAnon = false;
 let isFadingSoyo = false;
 let isL2DPlayingAnon = false;
 let isL2DPlayingSoyo = false;
+let l2dNoMouseGazeBound = false;
 
 // ---- 停止所有 Live2D ----
 function stopLive2D() {
@@ -2203,6 +2204,26 @@ function setEyeTarget(model, x, y) {
   core.setParameterValueById('ParamAngleX', x * 20);
   core.setParameterValueById('ParamAngleY', y * 20);
   core.setParameterValueById('ParamBodyAngleX', x * 8);
+}
+
+function isNoMouseL2DMode() {
+  return window.matchMedia('(hover: none), (pointer: coarse), (max-width: 640px)').matches;
+}
+
+function applyNoMouseMutualGaze() {
+  if (!isNoMouseL2DMode()) return;
+  // 没有鼠标的设备上，默认让左侧爱音看向右侧素世。
+  if (l2dReadyAnon && l2dModelAnon) setEyeTarget(l2dModelAnon, 0.45, 0.02);
+  // 没有鼠标的设备上，默认让右侧素世看向左侧爱音。
+  if (l2dReadySoyo && l2dModelSoyo) setEyeTarget(l2dModelSoyo, -0.45, 0.02);
+}
+
+function bindNoMouseMutualGaze() {
+  if (l2dNoMouseGazeBound) return;
+  l2dNoMouseGazeBound = true;
+  // 横竖屏或窗口尺寸变化后重新设置互看方向，避免移动端布局变化后视线回中。
+  window.addEventListener('resize', applyNoMouseMutualGaze);
+  window.addEventListener('orientationchange', applyNoMouseMutualGaze);
 }
 
 // ---- 显示想法气泡（支持双模型） ----
@@ -2344,6 +2365,8 @@ async function loadLive2DAnon() {
     }
 
     resizeL2DAnon();
+    bindNoMouseMutualGaze();
+    applyNoMouseMutualGaze();
 
     // 两个 Live2D 使用独立 PIXI renderer 时，Cubism 会复用 WebGL 状态；每帧刷新爱音的上下文标记，避免后加载的模型把她清空。
     l2dAppAnon.ticker.add(() => {
@@ -2351,12 +2374,16 @@ async function loadLive2DAnon() {
     });
 
     l2dAppAnon.view.addEventListener('mousemove', (e) => {
+      if (isNoMouseL2DMode()) return;
       const rect = l2dAppAnon.view.getBoundingClientRect();
       const x = (e.clientX - rect.left) / rect.width;
       const y = (e.clientY - rect.top) / rect.height;
       setEyeTarget(model, (x - 0.5) * 2, (y - 0.5) * -2);
     });
-    l2dAppAnon.view.addEventListener('mouseleave', () => { setEyeTarget(model, 0, 0); });
+    l2dAppAnon.view.addEventListener('mouseleave', () => {
+      if (isNoMouseL2DMode()) { applyNoMouseMutualGaze(); return; }
+      setEyeTarget(model, 0, 0);
+    });
 
     function handlePointerAnon(clientX, clientY) {
       if (loadingAnon && !loadingAnon.classList.contains('hidden')) return;
@@ -2444,6 +2471,8 @@ async function loadLive2DSoyo() {
     }
 
     resizeL2DSoyo();
+    bindNoMouseMutualGaze();
+    applyNoMouseMutualGaze();
 
     // 两个 Live2D 使用独立 PIXI renderer 时，Cubism 会复用 WebGL 状态；每帧刷新素世的上下文标记，确保两个角色都能绘制。
     l2dAppSoyo.ticker.add(() => {
@@ -2451,12 +2480,16 @@ async function loadLive2DSoyo() {
     });
 
     l2dAppSoyo.view.addEventListener('mousemove', (e) => {
+      if (isNoMouseL2DMode()) return;
       const rect = l2dAppSoyo.view.getBoundingClientRect();
       const x = (e.clientX - rect.left) / rect.width;
       const y = (e.clientY - rect.top) / rect.height;
       setEyeTarget(model, (x - 0.5) * 2, (y - 0.5) * -2);
     });
-    l2dAppSoyo.view.addEventListener('mouseleave', () => { setEyeTarget(model, 0, 0); });
+    l2dAppSoyo.view.addEventListener('mouseleave', () => {
+      if (isNoMouseL2DMode()) { applyNoMouseMutualGaze(); return; }
+      setEyeTarget(model, 0, 0);
+    });
 
     function handlePointerSoyo(clientX, clientY) {
       if (loadingSoyo && !loadingSoyo.classList.contains('hidden')) return;
