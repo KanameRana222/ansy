@@ -2572,7 +2572,7 @@ async function loadLive2DAnon() {
     bindNoMouseMutualGaze();
     applyNoMouseMutualGaze();
 
-    // 两个 Live2D 使用独立 PIXI renderer 时，Cubism 会复用 WebGL 状态；每帧刷新爱音的上下文标记，避免后加载的模型把她清空。
+    // 两个 Live2D 使用独立 PIXI renderer 时，Cubism 会复用 WebGL 状态；每帧刷新爱音的上下文标记，避免后加载的模型把她清空
     l2dAppAnon.ticker.add(() => {
       if (l2dModelAnon) l2dModelAnon.glContextID = -1;
     });
