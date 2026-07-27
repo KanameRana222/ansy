@@ -506,7 +506,20 @@
     padding: 0 8px;
   }
   .hero-title {
+    /* 手机端固定左右头像占位，让“素年锦音”按文字本身居中。 */
+    display: grid;
+    grid-template-columns: 28px auto 28px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 6px;
     font-size: clamp(17px, 5.2vw, 22px);
+  }
+  .hero-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    display: block;
+    margin: 0;
   }
   .hero-subtitle {
     display: flex;
@@ -2237,6 +2250,31 @@
 </div><!-- /app -->
 
   <!-- ===== Live2D 依赖库 ===== -->
+  <script>
+  // 提前过滤本地预览和 Live2D SDK 的启动日志，避免控制台显示无关版本信息。
+  (function() {
+    const originalLog = console.log;
+    const originalInfo = console.info;
+    const blockedPatterns = [
+      'live2d cubism core version',
+      'live2d cubism sdk core version',
+      'live reload enabled',
+    ];
+
+    function shouldBlockConsole(args) {
+      const msg = args.join(' ').toLowerCase();
+      return blockedPatterns.some(pattern => msg.includes(pattern));
+    }
+
+    console.log = function(...args) {
+      if (!shouldBlockConsole(args)) originalLog.apply(console, args);
+    };
+
+    console.info = function(...args) {
+      if (!shouldBlockConsole(args)) originalInfo.apply(console, args);
+    };
+  })();
+  </script>
   <script src="./lib/pixi.min.js"></script>
   <script src="./lib/live2dcubismcore.min.js"></script>
   <script src="./lib/pixi-live2d-display-cubism4.min.js"></script>
